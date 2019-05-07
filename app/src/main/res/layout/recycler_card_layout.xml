@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <!--Image and Check Status-->
+            <LinearLayout
+                android:id="@+id/leftPartLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivProductImage"
+                    android:layout_width="225dp"
+                    android:layout_height="195dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="productImage"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvCheckStock"
+                    android:layout_width="197dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/cornerless_shape_white"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:text="Check Stock"
+                    android:textSize="25sp" />
+
+                <!--Image and Check Status Container Ends-->
+            </LinearLayout>
+
+            <!--Right Part Layout starts -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/leftPartLayout"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvProductId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_toStartOf="@+id/tvEMI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Bandhan"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvEMI"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="EMI" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tide Bar"
+                    android:textSize="20sp" />
+
+                <!--Linear SubButton layout-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/cornerless_shape_white"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnProduct1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="500ml" />
+
+                    <View
+                        android:id="@+id/vHorizontalBar1"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/btnProduct2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="250ml" />
+
+                    <View
+                        android:id="@+id/vHorizontalBar2"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/btnProduct3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="250ml" />
+
+                    <View
+                        android:id="@+id/vHorizontalBar3"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/btnProduct4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="750ml" />
+
+                    <View
+                        android:id="@+id/vHorizontalBar4"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="0dp" />
+
+                    <Button
+                        android:id="@+id/btnProduct5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:text="24x750ml" />
+
+                    <!--Button SubLayout Ends-->
+                </LinearLayout>
+
+                <!--SubLayout Group of Right Layout-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <!--MRP Main Row -->
+                    <LinearLayout
+                        android:id="@+id/MRP_SubLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp">
+
+                        <TextView
+                            android:id="@+id/tvMRP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="22dp"
+                            android:text="MRP"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvRupeeSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="5dp"
+                            android:text="₹"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="30dp"
+                            android:text="1000"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <!--Mrp 1st row-->
+                    <LinearLayout
+                        android:id="@+id/mrpFirstRowLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/MRP_SubLayout"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp">
+
+                        <TextView
+                            android:id="@+id/tvProductCount1"
+                            android:layout_width="52dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="22dp"
+                            android:text="1"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvRupeeSymbol1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="5dp"
+                            android:text="₹"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvPrice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="30dp"
+                            android:text="1000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvDiscount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="15dp"
+                            android:text="5% off"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <!--MRP 2nd row-->
+                    <LinearLayout
+                        android:id="@+id/mrpSecondRowLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mrpFirstRowLayout"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp">
+
+                        <TextView
+                            android:id="@+id/tvProductCount2"
+                            android:layout_width="53dp"
+                            android:layout_height="wrap_content"
+                            android:text="10+"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvRupeeSymbol2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="5dp"
+                            android:text="₹"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvPrice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="30dp"
+                            android:text="1000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvDiscount2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="15dp"
+                            android:text="5% off"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <!--MRP 3rd row-->
+                    <LinearLayout
+                        android:id="@+id/mrpThirdRowLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mrpSecondRowLayout"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp">
+
+                        <TextView
+                            android:id="@+id/tvProductCount3"
+                            android:layout_width="53dp"
+                            android:layout_height="wrap_content"
+                            android:text="30+"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvRupeeSymbol3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="5dp"
+                            android:text="₹"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvPrice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="30dp"
+                            android:text="1000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvDiscount3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="15dp"
+                            android:text="5% off"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnProductAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/cornerless_shape_blue"
+                        android:paddingLeft="80dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="80dp"
+                        android:paddingBottom="10dp"
+                        android:text="Add"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+                <!--Right Part Layout Ends-->
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HomePage</string>
+
+    <string-array name="Catalogue">
+        <item>All</item>
+        <item>Focus Articles</item>
+        <item>Investment Articles</item>
+    </string-array>
+    <string name="title_activity_search">SearchActivity</string>
+
+</resources>
